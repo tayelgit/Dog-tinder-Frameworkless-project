@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dog Title</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/rating.css">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <a href="index.html" class="navbar-item pointer">Home</a>
+      <a href="about.html" class="navbar-item pointer">About</a>
+      <a href="rating.html" class="navbar-item pointer">Rating</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="content-container  dog-container thumb-container">
+      <div>
+        <span class="badge-button badge-corner facebook-blue shadow">
+          <em class="material-icons icon-font">
+            thumb_up_alt
+          </em>
+        </span>
+        <h2>Dogs your rate with very good boy!</h2>
+        <h4>Click on a Picture to remove the Dog from this list</h4>
+        <div id="good-boy-list-container" class="list-container">
+        </div>
+      </div>
+    </div>
+    <div class="content-container  dog-container rate-container">
+      <div>
+        <h2>Rate this dog!</h2>
+        <p>Here is a picture of a dog</p>
+
+        <img id="rating-image" class="rating-image shadow"
+          src="https://www.kindpng.com/picc/m/392-3926418_loading-spinner-loading-icon-png-transparent-png-download.png"
+          alt="picture of a dog">
+        <div class="button-container ">
+          <span class="badge-label badge-right">good boy</span>
+          <span class="badge-button badge-right  clickable facebook-blue pointer shadow"
+            onclick="rateDog(listIds.GOOD_BOY)">
+            <em class="material-icons icon-font">
+              thumb_up_alt
+            </em>
+          </span>
+          <span class="badge-label badge-left">very good boy</span>
+          <span class="badge-button clickable badge-left blue-violet pointer shadow"
+            onclick="rateDog(listIds.VERY_GOOD_BOY)">
+            <em class="material-icons icon-font">
+              favorite
+            </em>
+          </span>
+
+        </div>
+      </div>
+    </div>
+    <div class="content-container  dog-container fav-container">
+      <div>
+        <span class="badge-button badge-corner blue-violet shadow">
+          <em class="material-icons icon-font">
+            favorite
+          </em>
+        </span>
+        <h2>Dogs your rate with very good boy!</h2>
+        <h4>Click on a Picture to remove the Dog from this list</h4>
+        <div id="very-good-boy-list-container" class="list-container">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="js/rated.js"></script>
+
+</html>

@@ -1,0 +1,138 @@
+/* goodboy stuff */
+.rating-image{
+    width: auto;
+    max-width: 75%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.dog-container{
+    width: 500px;
+    min-height: 600px;
+    flex-direction: column;
+    align-self: start;
+}
+
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.badge-button{
+    position: absolute;
+    top: -65px;
+    padding: 15px 15px 0px 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 72px;
+}
+
+.clickable:active {
+    color:green
+}
+
+.badge-corner{
+    position: relative;
+    top:5px;
+    padding: 10px 10px 0px 10px;
+    font-size: 42px;
+}
+
+
+.badge-right{
+    
+    left: 50px;
+}
+
+.badge-left{
+    right: 50px;    
+}
+
+
+
+.blue-violet{
+    background: blueviolet ;
+}
+
+.facebook-blue{
+    background-color: #3B5998;
+}
+
+.button-container{
+    position: relative;
+}
+
+.icon-font{
+    font-size: 1em;
+}
+.badge-label{
+    position: absolute;
+    top: -96px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 24px;
+}
+
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-list-item{
+    width: 110px;
+    height: 100px;
+}
+
+.list-image{
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width:500px) {
+    .badge-right{
+       left: 20px;
+    }
+    
+    .badge-left{
+        right: 20px;    
+    }
+
+    .badge-label{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:1059px) {
+
+    
+    .fav-container{
+        order: 3;
+    }
+    .thumb-container{
+        order: 2;
+    }
+    .rate-container{
+        order: 1;
+    }
+}
+
+@media only screen and (max-width:1589px) {
+
+    .fav-container{
+        order: 2;
+    }
+    .thumb-container{
+        order: 1;
+    }
+    .rate-container{
+        order: 3;
+    }
+}

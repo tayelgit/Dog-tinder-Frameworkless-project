@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dog Title</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <a href="index.html" class="navbar-item pointer">Home</a>
+      <a href="about.html" class="navbar-item pointer">About</a>
+      <a href="rating.html" class="navbar-item pointer">Rating</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="content-container">
+      <div>
+        <h1>This it a Homepage</h1>
+        <p>This is a dog</p>
+      
+        <img class="dog-picture"
+          src="https://images.theconversation.com/files/319375/original/file-20200309-118956-1cqvm6j.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop"
+          alt="picture of a dog">
+          <p> You can rate them under <a href="rating.html"> ratingDogs</a></p>
+      </div>
+    </div>
+    <form id="form" class="content-container">
+      
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value="John@doe.tv" required><br>
+        
+        <label for="number">Age:</label><br>
+        <input type="number" id="number" name="number" value="322" required><br>
+        
+        <label for="pw">Password:</label><br>
+        <input type="password" id="pw" name="pw" required ><br><br>
+        
+        <input id="submitBtn" type="submit"onclick="submitClicked()" disabled value="Submit"></input>
+    </form>
+</body>
+<script src="js/home.js"></script>
+
+</html>
